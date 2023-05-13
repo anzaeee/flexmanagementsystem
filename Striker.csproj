@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9380CAB6-B732-4B7E-9A12-6DBA30E83BA3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Striker</RootNamespace>
+    <AssemblyName>Striker</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FacultyInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacultyInterface.Designer.cs">
+      <DependentUpon>FacultyInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyInt_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacultyInt_A.Designer.cs">
+      <DependentUpon>FacultyInt_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyInt_Att.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacultyInt_Att.Designer.cs">
+      <DependentUpon>FacultyInt_Att.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyInt_CGR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacultyInt_CGR.Designer.cs">
+      <DependentUpon>FacultyInt_CGR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyInt_ER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacultyInt_ER.Designer.cs">
+      <DependentUpon>FacultyInt_ER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyInt_GR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacultyInt_GR.Designer.cs">
+      <DependentUpon>FacultyInt_GR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyInt_Marks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacultyInt_Marks.Designer.cs">
+      <DependentUpon>FacultyInt_Marks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyInt_SFR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacultyInt_SFR.Designer.cs">
+      <DependentUpon>FacultyInt_SFR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LandingPage.Designer.cs">
+      <DependentUpon>LandingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn_AdminOffice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn_AdminOffice.Designer.cs">
+      <DependentUpon>LogIn_AdminOffice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn_Faculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn_Faculty.Designer.cs">
+      <DependentUpon>LogIn_Faculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeInt_Allocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficeInt_Allocation.Designer.cs">
+      <DependentUpon>OfficeInt_Allocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeInt_OC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficeInt_OC.Designer.cs">
+      <DependentUpon>OfficeInt_OC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeInt_CA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficeInt_CA.Designer.cs">
+      <DependentUpon>OfficeInt_CA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeInt_SS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficeInt_SS.Designer.cs">
+      <DependentUpon>OfficeInt_SS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student_Attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Attendance.Designer.cs">
+      <DependentUpon>Student_Attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Feedback.Designer.cs">
+      <DependentUpon>Student_Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Interface.Designer.cs">
+      <DependentUpon>Student_Interface.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FacultyInterface.resx">
+      <DependentUpon>FacultyInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyInt_A.resx">
+      <DependentUpon>FacultyInt_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyInt_Att.resx">
+      <DependentUpon>FacultyInt_Att.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyInt_CGR.resx">
+      <DependentUpon>FacultyInt_CGR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyInt_ER.resx">
+      <DependentUpon>FacultyInt_ER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyInt_GR.resx">
+      <DependentUpon>FacultyInt_GR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyInt_Marks.resx">
+      <DependentUpon>FacultyInt_Marks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyInt_SFR.resx">
+      <DependentUpon>FacultyInt_SFR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPage.resx">
+      <DependentUpon>LandingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn_AdminOffice.resx">
+      <DependentUpon>LogIn_AdminOffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn_Faculty.resx">
+      <DependentUpon>LogIn_Faculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficeInt_Allocation.resx">
+      <DependentUpon>OfficeInt_Allocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficeInt_OC.resx">
+      <DependentUpon>OfficeInt_OC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficeInt_CA.resx">
+      <DependentUpon>OfficeInt_CA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficeInt_SS.resx">
+      <DependentUpon>OfficeInt_SS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Student_Attendance.resx">
+      <DependentUpon>Student_Attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Feedback.resx">
+      <DependentUpon>Student_Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Interface.resx">
+      <DependentUpon>Student_Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
